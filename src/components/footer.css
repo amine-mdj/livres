@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.ftr{
+    width: 100vw;
+    height: 30vh;
+    border-top: 1px solid rgb(218, 218, 218);
+    position: relative;
+}
+
+.credit{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 15px;
+    left: 44%;
+}
+
+.credit p{
+    font-family: "Playfair Display", serif;
+}
+
+.smallhrt{
+    width: 20px;
+    height: 20px;
+    margin-inline: 10px;
+}
+
+.inst{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inst img{
+    width: 35px;
+    height: 35px;
+}
+
+.inst p{
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+.dahabia{
+    position: absolute;
+    right: 150px;
+    top: 0px;
+}
+
+.dahabia p{
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+.dahabia img{
+    height: 150px ;
+    width:200px ;
+}
+

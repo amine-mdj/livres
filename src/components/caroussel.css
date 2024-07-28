@@ -1,0 +1,16 @@
+.swipercont{
+    width: 50vw;
+    margin-inline: auto;
+    margin-bottom: 50px;
+}
+
+.swprcontinr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+}
+
+.imgstl{
+    box-shadow: 0px 0px 15px black;
+}

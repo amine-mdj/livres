@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face{
+    font-family: arabic;
+    src: url(../images/33-B-Fantezy.ttf);
+}
+
+.banner{
+    height: 6vh;
+    width: 100%;
+    background-color: #fbecef;
+}
+
+.nav{
+    height: 8vh;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid rgb(175, 175, 175);
+    margin-inline: auto;
+    position: relative;
+    top: -3vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    margin-left: 14vw;
+}
+
+.bar{
+    margin-left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart{
+
+    margin-right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.inpt{
+    padding-top: 7px;
+    background-color: rgb(234, 234, 234);
+    height: 3.3vh;
+    width: 18vw;
+    overflow: auto;
+    margin-right: 50px;
+    border-bottom: 1px solid rgb(150, 150, 150);
+    
+}
+
+.inpt input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.search{
+    margin-left: 8px;
+ 
+}
+
+.container{
+    position: relative;
+}
+
+.navtoggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100vh ;
+    width:100vw ;
+    background-color: #fbecef;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height:100vh ;
+    width:100vw ;
+}
+
+.griditem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.griditem p{
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+}
+
+.close{
+    position: absolute;
+    right: 80px;
+    top: 50px;
+    background-color: white;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 100%;
+    border: 1px solid #00660f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navtoggle.active{
+    visibility: hidden;
+}
+
+.nav2{
+    background-color: #283e4e;
+    width: 90%;
+    height: 35vh;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.nav2inner{
+    flex: 1;
+}
+
+.nav2inter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+    
+}
+
+.nav2inter.slide{
+    animation: bounce-animation 4s ease-in-out forwards ;
+}
+
+@keyframes bounce-animation {
+    0% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutQuart */
+    }
+    10% {
+      transform: translateY(-30px);
+      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060); /* easeInOutQuart */
+    }
+    20% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutQuart */
+    }
+    30% {
+      transform: translateY(-30px);
+      animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060); /* easeInOutQuart */
+    }
+    40% {
+      transform: translateY(0%);
+      animation-timing-function: ease-in-out;
+    }
+    
+    60% {
+      transform: translateY(-65%);
+      animation-timing-function: ease-in-out;
+    }
+    
+    90% {
+      transform: translateY(-42%);
+      animation-timing-function: ease-in-out;
+    }
+    100% {
+      transform: translateY(-50%);
+      animation-timing-function: ease-in-out;
+    }
+}
+
+.nav2inner2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2 p{
+    position: relative;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    color: #ffbf00;
+    cursor: pointer;
+}
+
+.nav2inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2 p:hover::after{
+    width: 0%;
+}
+
+.heart1{
+    display: flex;
+}
+
+.heart1 img{
+    width: 35px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.nav2 p::after{
+    content : '';
+    position: absolute;
+    background-color: #ffbf00;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: 5px;
+    transition: width 0.5s;
+}
+
+.arabic{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.arabic p{
+    font-family: arabic;
+    font-size: 60px;
+}
+
+.promo{
+    position: absolute;
+    height: 45%;
+    width: 20%;
+    right: 180px;
+    top: 480px;
+    transform: rotateZ(45deg);
+}

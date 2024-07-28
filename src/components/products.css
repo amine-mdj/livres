@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 40px;
+    width: 70vw;
+    margin: auto;
+    
+}
+
+.view{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+
+}
+
+.vcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 30px;
+}
