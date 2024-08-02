@@ -1,19 +1,24 @@
-import Navbar from './components/navbar.js'
-import Caroussel from './components/caroussel.js'
-import Products from './components/products.js'
-import Footer from './components/footer.js'
+import {  Route, Routes, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
-import './App.css';
+import Home from './pages/home';
+import Bygenre from './pages/bygenre';
+
+import './app.css';
 
 function App() {
+     const location = useLocation()
+
+ 
+
   return (
-    <div className="App">
-      <Navbar/>
-      <Caroussel/>
-      <Products/>
-      <Footer/>
-    </div>
-  );
+    <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route  path="/" element={<Home />} />
+            <Route path="/bygenre" element={<Bygenre />} />
+            </Routes>
+            </AnimatePresence>
+    );
 }
 
 export default App;

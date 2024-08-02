@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { NavLink} from 'react-router-dom'
 import Heart from '../images/heart2.png'
 import Promo from '../images/promo2.png'
-import './navbar.css'
+import './navbar2.css'
 
 
-const Navbar = () => {
+const Navbar2 = () => {
 
     const [isActive, setIsActive] = useState(false);
     const [isSlide, setIsSlide] = useState(false);
@@ -52,10 +52,8 @@ const Navbar = () => {
           <div className='nav2inner2'><p>Reduction pendant le mois de ramadan allant jusqu'a -50% </p></div>
           </div>
         </div>
-        <div className='arabic'><p>إقرأ</p></div>
-        <img className='promo' src={Promo} alt="" srcset="" />
-      </div>
+        </div>
     );
   }
   
-  export default Navbar;
+  export default Navbar2;
