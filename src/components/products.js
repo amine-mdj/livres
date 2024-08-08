@@ -9,9 +9,13 @@ import Cover6 from '../images/cover6.jpg'
 import Cover7 from '../images/cover7.jpg'
 
 
+
+
 const Products = () => {
     return (
       <div>
+        
+        
         <div className='grid3'>
         <Item image={Cover1} title="ceci est le titre 1"  price="$50 USD" />
         <Item image={Cover2} title="ceci est le titre 2"  price="$78 USD" />

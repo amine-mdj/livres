@@ -1,0 +1,26 @@
+/* Define the animation */
+
+  @keyframes dash{
+    0%{
+        stroke-dashoffset: 1410;
+        
+    }
+    100%{
+        stroke-dashoffset: 0;
+        
+    }
+  }
+  /* Apply styles to the path */
+ .svg1 path {
+     stroke-dasharray: 1410;
+     stroke-dashoffset: 0;
+     stroke: black;
+     stroke-width: 1;
+     }
+  
+  /* Animate the path on hover */
+
+  .svg1:hover path{
+    animation: dash 2s linear forwards;
+  }
+  
